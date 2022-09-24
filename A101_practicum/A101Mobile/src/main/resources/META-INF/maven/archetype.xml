@@ -1,0 +1,9 @@
+<archetype>
+  <id>A101Mobile1</id>
+  <sources>
+    <source>src/main/java/App.java</source>
+  </sources>
+  <testSources>
+    <source>src/tests/java/AppTest.java</source>
+  </testSources>
+</archetype>
