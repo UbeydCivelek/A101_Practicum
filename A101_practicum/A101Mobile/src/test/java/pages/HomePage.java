@@ -19,18 +19,21 @@ public class HomePage {
 
         this.driver = driver;
     }
-    public void close_popup() {
+    public void close_popup() throws InterruptedException {
+        Thread.sleep(10000);
         WebElement closepopup = driver.findElement(close_popup_id);
         closepopup.click();
-        System.out.println("Pupup kapatıldı.");
+        System.out.println("Popup kapatıldı.");
     }
-    public void go_to_dizalticorap() {
+    public void go_to_dizalticorap() throws InterruptedException {
         WebElement menu = driver.findElement(menu_xpath);
         menu.click();
         WebElement giyimveaksesuar = driver.findElement(giyim_ve_aksesuar_xpath);
         giyimveaksesuar.click();
+        Thread.sleep(2000);
         WebElement kadinicgiyim = driver.findElement(kadin_icgiyim_xpath);
         kadinicgiyim.click();
+        Thread.sleep(2000);
         WebElement dizalticorap = driver.findElement(dizalti_corap_xpath);
         dizalticorap.click();
         System.out.println("Giyim--> Aksesuar--> Kadın İç Giyim-->Dizaltı Çorap bölümüne gidildi");

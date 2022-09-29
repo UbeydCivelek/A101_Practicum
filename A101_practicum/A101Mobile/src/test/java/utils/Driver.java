@@ -18,13 +18,13 @@ public class Driver {
             DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
             desiredCapabilities.setCapability("platformName", "Android");
             desiredCapabilities.setCapability("appium:autoGrantPermissions", true);
-            desiredCapabilities.setCapability("appium:app", "C:\\Users\\User\\Desktop\\A101Mobile1\\apk\\a101.apk");
+            desiredCapabilities.setCapability("appium:app", "C:\\Users\\User\\Desktop\\A101_practicum\\A101Mobile\\apk\\a101.apk");
             desiredCapabilities.setCapability("APP_PACKAGE", "org.studionord.a101");
             desiredCapabilities.setCapability("APP_ACTIVITY", "host.exp.exponent.MainActivity");
 
 
             driver = new AndroidDriver<MobileElement>(new URL("http://127.0.0.1:4723/wd/hub"), desiredCapabilities);
-            driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         }
         return driver;
     }

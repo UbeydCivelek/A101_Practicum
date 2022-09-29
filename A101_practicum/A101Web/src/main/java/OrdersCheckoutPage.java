@@ -17,8 +17,8 @@ public class OrdersCheckoutPage {
     private final By district_xpath = By.xpath("//option[@value=\"457\"]");
     private final By neighborhood_xpath = By.xpath("//option[@value=\"35548\"]");
     private final By address_xpath = By.xpath("//textarea[@class=\"js-address-textarea\"]");
-    private final By postcode_xpath = By.xpath("//input[@name=\"postcode\"]");
-    private final By save_button_xpath = By.xpath("//button[@class=\"button green js-set-country js-prevent-emoji\"]");
+    ///private final By postcode_xpath = By.xpath("//input[@name=\"postcode\"]");
+    private final By save_button_xpath = By.xpath("//button[@class =\"button green address-modal-submit-button js-set-country js-prevent-emoji js-address-form-submit-button\"]");
     private final By save_and_contiune_xpath = By.xpath("//button[@class=\"button block green js-proceed-button\"]");
     private final By pay_xpath = By.xpath("(//div[@class = \"section-hero\"])[6]");
 

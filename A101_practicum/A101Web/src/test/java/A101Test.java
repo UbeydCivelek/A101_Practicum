@@ -3,7 +3,6 @@ import org.junit.jupiter.api.Test;
 
 public class A101Test extends BaseTest {
 
-
     @Test
     public void Web_test() {
         homePage.accept_cookies();
